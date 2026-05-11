@@ -1,11 +1,15 @@
-const mainApp = document.querySelector<HTMLElement>(".app");
+import { grid } from "./Constraint/gameData";
+import { mainApp } from "./DOM/domElements";
 
-const grid = 20;
-
-for (let i = 0; i < grid; i++) {
-  for (let j = 0; j < grid; j++) {
-    let element: HTMLParagraphElement = document.createElement("p");
-    element.classList.add("cell");
-    mainApp.appendChild(element);
+function init() {
+  if (!mainApp) return;
+  for (let i = 0; i < grid; i++) {
+    for (let j = 0; j < grid; j++) {
+      let element: HTMLParagraphElement = document.createElement("p");
+      if (!element) return;
+      element.classList.add("cell");
+      mainApp.appendChild(element);
+    }
   }
 }
+init();
