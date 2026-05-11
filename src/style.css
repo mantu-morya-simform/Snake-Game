@@ -36,3 +36,12 @@ body {
 .cell:nth-child(odd) {
   background-color: #b2f2bb;
 }
+
+.snake {
+  background: #000 !important;
+}
+
+.food {
+  background: red !important;
+  border-radius: 50%;
+}
