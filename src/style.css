@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.app {
+  padding: 10px;
+  height: 600px;
+  width: 600px;
+  border: 20px solid #7048e8;
+  background: #e9ecef;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+}
+
+.cell {
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+}
+
+.even {
+  background-color: #ebfbee;
+}
+
+/* Odd cells */
+.odd {
+  background-color: #b2f2bb;
+}
+
+.snake {
+  background: #000;
+}
+
+.food {
+  background: red;
+  border-radius: 50%;
+}
