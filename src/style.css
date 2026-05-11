@@ -28,20 +28,20 @@ body {
   border: 1px solid black;
 }
 
-.cell:nth-child(even) {
+.even {
   background-color: #ebfbee;
 }
 
 /* Odd cells */
-.cell:nth-child(odd) {
+.odd {
   background-color: #b2f2bb;
 }
 
 .snake {
-  background: #000 !important;
+  background: #000;
 }
 
 .food {
-  background: red !important;
+  background: red;
   border-radius: 50%;
 }
