@@ -1,7 +1,7 @@
 import { drawFoodSnake } from "./Utility/drawFoodSnake";
+import { handleKeyDown } from "./Utility/handleKeyDown";
 import { init } from "./Utility/init";
 import { keyPressEvent } from "./Utility/keyPressEvent";
-import { moveSnake } from "./Utility/moveSnake";
 
 /**
  *  init() :- initialize the grid
@@ -19,6 +19,6 @@ drawFoodSnake();
 keyPressEvent();
 
 /**
- * setInterval() : handle snake and food movement
+ *  @description this is for when i click (ArrowLeft| ArrowUp | ArrowDown| ArrowRight) among them then game is being start
  */
-setInterval(moveSnake, 300);
+window.addEventListener("keydown", handleKeyDown);

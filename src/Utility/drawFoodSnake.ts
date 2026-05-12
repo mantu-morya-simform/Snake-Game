@@ -1,13 +1,10 @@
 import { cells, food, grid, snake } from "../Constraint/gameData";
+import appleImg from "../assets/apple.png";
 
 export function drawFoodSnake() {
-  cells.forEach((cell, index) => {
+  cells.forEach((cell) => {
     cell.className = "cell";
-    if (index % 2 === 0) {
-      cell.classList.add("even");
-    } else {
-      cell.classList.add("odd");
-    }
+    cell.innerHTML = "";
   });
 
   snake.forEach((part) => {
@@ -17,4 +14,6 @@ export function drawFoodSnake() {
 
   const foodIndex = food.y * grid + food.x;
   cells[foodIndex].classList.add("food");
+  cells[foodIndex].innerHTML =
+    `<img class="food" src="${appleImg}" alt="apple_png" />`;
 }
