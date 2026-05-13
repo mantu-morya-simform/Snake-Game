@@ -55,8 +55,8 @@ export function moveSnake() {
         console.log(err);
       });
       setTimeout(() => {
-        alert("Game Over");
-        location.reload();
+        alert("Game Over..");
+        window.location.reload();
       }, 1200);
       return;
     }

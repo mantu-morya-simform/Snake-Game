@@ -3,13 +3,13 @@ import {
   direction,
   setCanChangeDirection,
   setDirection,
-  setGameOver,
+  setStopEnable,
 } from "../Constraint/gameData";
 
 export function keyPressEvent() {
   window.addEventListener("keydown", (e) => {
     if (!canChangeDirection) return;
-    setGameOver(true);
+    setStopEnable(true);
     if (e.key === "ArrowUp" && direction !== "DOWN") {
       setDirection("UP");
       setCanChangeDirection(false);

@@ -19,11 +19,11 @@ export function setFood(newFood: { x: number; y: number }) {
   food = newFood;
 }
 export function setStopEnable(status: boolean) {
-  isGameOver = status;
+  isStopEnable = status;
 }
 
 export function setGameOver(status: boolean) {
-  isStopEnable = status;
+  isGameOver = status;
 }
 
 export let canChangeDirection = true;
