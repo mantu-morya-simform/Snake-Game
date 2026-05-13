@@ -7,6 +7,7 @@ export const gameState = {
 };
 export let gameInterval: number;
 export let isGameOver = false;
+export let isStopEnable = false;
 export let food = {
   x: Math.floor(Math.random() * grid),
   y: Math.floor(Math.random() * grid),
@@ -17,6 +18,18 @@ export function setDirection(newDirection: string) {
 export function setFood(newFood: { x: number; y: number }) {
   food = newFood;
 }
-export function setGameOver(status: boolean) {
+export function setStopEnable(status: boolean) {
   isGameOver = status;
 }
+
+export function setGameOver(status: boolean) {
+  isStopEnable = status;
+}
+
+export let canChangeDirection = true;
+
+export function setCanChangeDirection(value: boolean) {
+  canChangeDirection = value;
+}
+
+export const gameStoreName = "snake-game";

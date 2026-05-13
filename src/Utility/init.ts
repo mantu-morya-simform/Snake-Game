@@ -1,5 +1,6 @@
 import { cells, grid } from "../Constraint/gameData";
-import { mainApp } from "../DOM/domElements";
+import { lastHighestElement, mainApp } from "../DOM/domElements";
+import { getScore } from "./score";
 
 export function init() {
   if (!mainApp) return;
@@ -11,4 +12,5 @@ export function init() {
       cells.push(element);
     }
   }
+  lastHighestElement.innerText = `Last Highest Score: ${getScore()}`;
 }
