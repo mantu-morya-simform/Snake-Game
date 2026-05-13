@@ -25,24 +25,30 @@ body {
 .cell {
   height: 25px;
   width: 25px;
-  border: 1px solid black;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Even cells */
-.even {
-  background-color: #ebfbee;
-}
-
-/* Odd cells */
-.odd {
+.cell:nth-child(odd) {
   background-color: #b2f2bb;
 }
 
-.snake {
-  background: #000 !important;
+.cell:nth-child(even) {
+  background-color: #ebfbee;
 }
 
+/* Snake */
+.snake {
+  background: #e8590c !important;
+  border-radius: 4px;
+}
+
+/* Food */
 .food {
-  background: red !important;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
+  object-fit: cover;
 }
