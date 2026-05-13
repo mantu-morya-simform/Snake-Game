@@ -28,6 +28,7 @@ body {
   border: 1px solid black;
 }
 
+/* Even cells */
 .even {
   background-color: #ebfbee;
 }
@@ -38,10 +39,10 @@ body {
 }
 
 .snake {
-  background: #000;
+  background: #000 !important;
 }
 
 .food {
-  background: red;
+  background: red !important;
   border-radius: 50%;
 }

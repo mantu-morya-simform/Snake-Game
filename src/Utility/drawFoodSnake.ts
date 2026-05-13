@@ -1,8 +1,6 @@
-import { cells, grid, snake } from "../Constraint/gameData";
-import { randomFood } from "./getRandomFood";
+import { cells, food, grid, snake } from "../Constraint/gameData";
 
 export function drawFoodSnake() {
-  //add  class to odd and even for diff style
   cells.forEach((cell, index) => {
     cell.className = "cell";
     if (index % 2 === 0) {
@@ -12,13 +10,11 @@ export function drawFoodSnake() {
     }
   });
 
-  //draw snake
   snake.forEach((part) => {
     const snakePartIndex = part.y * grid + part.x;
     cells[snakePartIndex].classList.add("snake");
   });
 
-  //draw food
-  let foodIndex = randomFood.y * grid + randomFood.x;
+  const foodIndex = food.y * grid + food.x;
   cells[foodIndex].classList.add("food");
 }
