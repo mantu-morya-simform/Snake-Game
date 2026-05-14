@@ -1,3 +1,4 @@
+import { clickStopGame } from "./Utility/ClickStopGame";
 import { drawFoodSnake } from "./Utility/drawFoodSnake";
 import { handleKeyDown } from "./Utility/handleKeyDown";
 import { init } from "./Utility/init";
@@ -22,3 +23,8 @@ keyPressEvent();
  *  @description this is for when i click (ArrowLeft| ArrowUp | ArrowDown| ArrowRight) among them then game is being start
  */
 window.addEventListener("keydown", handleKeyDown);
+
+/**
+ *  stop the game if i click stop button
+ */
+clickStopGame();

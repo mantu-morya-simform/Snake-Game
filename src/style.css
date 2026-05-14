@@ -10,6 +10,13 @@ body {
   align-items: center;
   height: 100vh;
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-image: url("./assets/Snake_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .app {
@@ -51,4 +58,29 @@ body {
   width: 25px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.last__highest__score {
+  color: rgb(60, 231, 60);
+}
+
+.curr__score {
+  color: red;
+}
+
+.stop__btn {
+  height: 40px;
+  width: 100px;
+  background: #ff6b6b;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
