@@ -14,6 +14,9 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  background-image: url("./assets/Snake_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .app {
