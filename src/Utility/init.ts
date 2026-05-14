@@ -12,5 +12,6 @@ export function init() {
       cells.push(element);
     }
   }
+  if (!lastHighestElement) return;
   lastHighestElement.innerText = `Last Highest Score: ${getScore()}`;
 }

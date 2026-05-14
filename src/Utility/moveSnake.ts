@@ -66,6 +66,7 @@ export function moveSnake() {
 
   // food eating
   if (head.x === food.x && head.y === food.y) {
+    if (!currHighestElement) return;
     currHighestElement.innerText = `Score: ${snake.length - 1}`;
     eatSound.currentTime = 0;
     eatSound.play();
